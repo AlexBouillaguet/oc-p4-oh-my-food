@@ -1,0 +1,35 @@
+.footer {
+    @include flex-container(flex, column, flex-start, flex-start);
+    background-color: $footer-bg-color;
+    color: white;
+    padding: 22px 25px;
+    row-gap: 16px;
+
+    &__title {
+        font-family: 'Shrikhand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__list {
+        @include flex-container(flex, column, flex-start, flex-start);
+        row-gap: 7px;
+
+        &__restaurant, &__partner {
+            font-weight: 500;
+        }
+
+        & i {
+            width: 22px;
+            font-size: 13px;
+        }
+    }
+
+
+
+    
+    
+
+}
+
+

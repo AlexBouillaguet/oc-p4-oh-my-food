@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    @include flex-container(flex, row, center, center);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    height: 63px;
+    z-index: 2;
+
+    &__logo {
+        display: block;
+    }
+}
+
+.location {
+    @include flex-container(flex, row, center, center);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    background-color: $bg-colour-secondaray;
+    height: 50px;
+    column-gap: 17px;
+    
+    &__input {
+        border: none;
+        outline: none;
+        background-color: $bg-colour-secondaray;
+        font-weight: 500;
+        font-size: 16px;
+        width: 125px;
+            
+        &::placeholder {
+            color: black;
+            opacity: 1;
+        }
+    }
+
+}

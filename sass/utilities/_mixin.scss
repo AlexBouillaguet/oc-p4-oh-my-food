@@ -1,0 +1,20 @@
+@mixin flex-container($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+
+@mixin btn($width) {
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom, $gradient-btn-colour, $primary-colour);
+  height: 50px;
+  width: $width;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2)
+
+}

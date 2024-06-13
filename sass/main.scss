@@ -1,0 +1,28 @@
+@import 'utilities/variables';
+@import 'utilities/mixin';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'modules/explore';
+@import 'modules/step';
+@import 'modules/restaurants';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: $bg-colour-primary;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 18px;
+}
