@@ -1,0 +1,40 @@
+.step {
+    @include flex-container(flex, column, flex-start, flex-start);
+    background-color: white;
+    margin-top: 57px;
+    padding: 0 20px;
+
+    @media (min-width: 1024px) {
+        align-items: center;
+    }
+
+    &__box {
+        width: 100%;
+
+        @media (min-width: 1080px) {
+            width: 1080px;
+        }
+
+        & h2 {
+            margin: 48px 0 26px;
+        }
+        &__container {
+            @include flex-container(flex, column, flex-start, center);
+            @include step-card;
+            row-gap: 24.92px;
+            width: 100%;
+            margin-bottom: 68px;
+
+            @media (min-width: 1024px) {
+                flex-direction: row;
+                justify-content: center;
+                column-gap: 24px;
+            }
+            
+            
+        }
+    }
+    
+    
+    
+}

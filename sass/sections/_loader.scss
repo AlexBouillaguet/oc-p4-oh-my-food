@@ -1,0 +1,34 @@
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: $bg-colour-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    animation: fadeOut 2s forwards;
+
+    &__circle {
+        border: 16px solid $bg-colour-primary; 
+        border-top: 16px solid $primary-colour; 
+        border-bottom: 16px solid $primary-colour;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 1s linear infinite;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes fadeOut {
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

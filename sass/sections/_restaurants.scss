@@ -1,0 +1,38 @@
+.restaurants {
+    @include flex-container(flex, column, flex-start, flex-start);
+    width: 100%;
+    padding: 54px 20px 66px 20px;
+
+    @media (min-width: 1024px) {
+        align-items: center;
+    }
+
+    &__box {
+        width: 100%;
+
+        @media (min-width: 1080px) {
+            width: 1080px;
+        }
+
+        & h2 {
+            margin-bottom: 26px;
+        }
+
+        &__container {
+            @include flex-container(flex, column, flex-start, center);
+            @include restaurant-card;
+            row-gap: 18px;
+            column-gap: 100px;
+
+            @media (min-width: 1024px) {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 50px;
+                // column-gap: 20px;
+            }
+
+        }
+    }
+
+}

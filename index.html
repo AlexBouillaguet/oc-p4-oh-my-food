@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <!-- <div class="loader"> -->
+        <!-- <div class="loader__circle"></div> -->
+    </div>
     <header>
         <nav class="navbar">
             <a href="#"><img class="navbar__logo" src="assets/images/logo/ohmyfood@2x.svg" alt="logo de Ohmyfood"></a>
@@ -36,103 +39,111 @@
         </section>
         <!-- section step -->
         <section class="step">
-            <h2>Fonctionnement</h2>
-            <div class="step__container">
-                <div class="step__container__card">
-                    <div class="step__container__card__number">1</div>
-                    <div class="step__container__card__icon">
-                        <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+            <div class="step__box">
+                <h2>Fonctionnement</h2>
+                <div class="step__box__container">
+                    <div class="step__box__container__card">
+                        <div class="step__box__container__card__number">1</div>
+                        <div class="step__box__container__card__icon">
+                            <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                        </div>
+                        <div class="step__box__container__card__text">Choisissez un restaurant</div>
                     </div>
-                    <div class="step__container__card__text">Choisissez un restaurant</div>
-                </div>
-                <div class="step__container__card">
-                    <div class="step__container__card__number">2</div>
-                    <div class="step__container__card__icon">
-                        <i class="fa-solid fa-list fa-lg"></i>
+                    <div class="step__box__container__card">
+                        <div class="step__box__container__card__number">2</div>
+                        <div class="step__box__container__card__icon">
+                            <i class="fa-solid fa-list fa-lg"></i>
+                        </div>
+                        <div class="step__box__container__card__text">Composez votre menu</div>
                     </div>
-                    <div class="step__container__card__text">Composez votre menu</div>
-                </div>
-                <div class="step__container__card">
-                    <div class="step__container__card__number">3</div>
-                    <div class="step__container__card__icon step__container__card__icon--primary-color">
-                        <i class="fa-solid fa-store fa-lg"></i>
+                    <div class="step__box__container__card">
+                        <div class="step__box__container__card__number">3</div>
+                        <div class="step__box__container__card__icon step__box__container__card__icon--primary-color">
+                            <i class="fa-solid fa-store fa-lg"></i>
+                        </div>
+                        <div class="step__box__container__card__text">Dégustez au restaurant</div>
                     </div>
-                    <div class="step__container__card__text">Dégustez au restaurant</div>
-                </div>
-           </div>
+               </div>
+            </div>
         </section>
         <!-- section restaurants -->
         <section class="restaurants">
-            <h2 id="restaurants">Restaurants</h2>
-            <div class="restaurants__container">
-                <a href="#">
-                    <article class="restaurants__container__card">
-                        <div class="restaurants__container__card__top">
-                            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
-                            <div class="restaurants__container__card__top__new">Nouveau</div>
-                        </div>
-                        <div class="restaurants__container__card__bottom">
-                            <div class="restaurants__container__card__bottom__content">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+            <div class="restaurants__box">
+                <h2 id="restaurants">Restaurants</h2>
+                <div class="restaurants__box__container">
+                    <a href="#">
+                        <article class="restaurants__box__container__card">
+                            <div class="restaurants__box__container__card__top">
+                                <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
+                                <div class="restaurants__box__container__card__top__new">Nouveau</div>
                             </div>
-                            <div class="restaurants__container__card__bottom__fav-icon">
-                                <i class="fa-regular fa-heart fa-lg"></i>
+                            <div class="restaurants__box__container__card__bottom">
+                                <div class="restaurants__box__container__card__bottom__content">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <div class="restaurants__box__container__card__bottom__fav-icon">
+                                    <i class="fa-regular fa-heart fav-icon--default"></i>
+                                    <i class="fa-solid fa-heart fav-icon--hover"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="restaurants__container__card">
-                        <div class="restaurants__container__card__top">
-                            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
-                            <div class="restaurants__container__card__top__new">Nouveau</div>
-                        </div>
-                        <div class="restaurants__container__card__bottom">
-                            <div class="restaurants__container__card__bottom__content">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="restaurants__box__container__card">
+                            <div class="restaurants__box__container__card__top">
+                                <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
+                                <div class="restaurants__box__container__card__top__new">Nouveau</div>
                             </div>
-                            <div class="restaurants__container__card__bottom__fav-icon--full">
-                                <i class="fa-solid fa-heart"></i>
+                            <div class="restaurants__box__container__card__bottom">
+                                <div class="restaurants__box__container__card__bottom__content">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="restaurants__box__container__card__bottom__fav-icon">
+                                    <i class="fa-regular fa-heart fav-icon--default"></i>
+                                    <i class="fa-solid fa-heart fav-icon--hover"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="restaurants__container__card">
-                        <div class="restaurants__container__card__top">
-                            <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
-                            <div class="restaurants__container__card__top__new--hide">Nouveau</div>
-                        </div>
-                        <div class="restaurants__container__card__bottom">
-                            <div class="restaurants__container__card__bottom__content">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="restaurants__box__container__card">
+                            <div class="restaurants__box__container__card__top">
+                                <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
+                                <div class="restaurants__box__container__card__top__new--hide">Nouveau</div>
                             </div>
-                            <div class="restaurants__container__card__bottom__fav-icon">
-                                <i class="fa-regular fa-heart fa-lg"></i>
+                            <div class="restaurants__box__container__card__bottom">
+                                <div class="restaurants__box__container__card__bottom__content">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                                <div class="restaurants__box__container__card__bottom__fav-icon">
+                                    <i class="fa-regular fa-heart fav-icon--default"></i>
+                                    <i class="fa-solid fa-heart fav-icon--hover"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="restaurants__container__card">
-                        <div class="restaurants__container__card__top">
-                            <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
-                            <div class="restaurants__container__card__top__new--hide">Nouveau</div>
-                        </div>
-                        <div class="restaurants__container__card__bottom">
-                            <div class="restaurants__container__card__bottom__content">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="restaurants__box__container__card">
+                            <div class="restaurants__box__container__card__top">
+                                <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'une assiette dans un restaurant">
+                                <div class="restaurants__box__container__card__top__new--hide">Nouveau</div>
                             </div>
-                            <div class="restaurants__container__card__bottom__fav-icon">
-                                <i class="fa-regular fa-heart fa-lg"></i>
+                            <div class="restaurants__box__container__card__bottom">
+                                <div class="restaurants__box__container__card__bottom__content">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <div class="restaurants__box__container__card__bottom__fav-icon">
+                                    <i class="fa-regular fa-heart fav-icon--default"></i>
+                                    <i class="fa-solid fa-heart fav-icon--hover"></i>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                </a>
+                        </article>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
