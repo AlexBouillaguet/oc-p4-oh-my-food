@@ -5,15 +5,43 @@
   padding: 22px 25px;
   row-gap: 16px;
 
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    height: 114px;
+  }
+
   &__title {
     font-family: "Shrikhand", sans-serif;
     font-weight: 400;
     font-size: 18px;
+
+    @media (min-width: 1024px) {
+      margin-right: 40px;
+    }
   }
 
   &__list {
     @include flex-container(flex, column, flex-start, flex-start);
     row-gap: 7px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      margin-right: 90px;
+      
+      &__mentions {
+        margin-right: 17px;
+      }
+      
+      &__partner {
+        margin-right: 45px;
+      }
+      
+      &__restaurant {
+        margin-right: 10px;
+      }
+    }
 
     &__restaurant,
     &__partner {

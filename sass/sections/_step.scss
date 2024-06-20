@@ -1,11 +1,11 @@
 .step {
     @include flex-container(flex, column, flex-start, flex-start);
     background-color: white;
-    margin-top: 57px;
-    padding: 0 20px;
+    padding: 50px 20px 68px 20px;
 
     @media (min-width: 1024px) {
         align-items: center;
+        padding-bottom: 50px;
     }
 
     &__box {
@@ -16,14 +16,13 @@
         }
 
         & h2 {
-            margin: 48px 0 26px;
+            margin-bottom: 26px;
         }
         &__container {
             @include flex-container(flex, column, flex-start, center);
             @include step-card;
             row-gap: 24.92px;
             width: 100%;
-            margin-bottom: 68px;
 
             @media (min-width: 1024px) {
                 flex-direction: row;

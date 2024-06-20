@@ -1,0 +1,122 @@
+.menu {
+
+     & img {
+          object-fit: cover;
+          height: 275px;
+          width: 100%;
+          display: block;
+     }
+     
+     &__container {
+          @include flex-container (flex, column, flex-start, center);
+          position: relative;
+          border-radius: 40px 40px 0 0;
+          background-color: $bg-colour-primary;
+          margin-top: -55px;
+          padding: 32px 13px 0 13px;
+          row-gap: 40px;
+
+          &__title {
+               @include flex-container (flex, row, space-between, center);
+               margin: 0 3px;
+               width: 100%;
+
+               & h1{
+                    font-size: 28px;
+                    font-family: 'Shrikhand', sans-serif;
+                    font-weight: 500;
+               }
+
+               &__fav-icon {
+                    position: relative;
+                    right: 30px;
+                    top: 10px;
+                    
+                    & i {
+                         font-size: 22px;
+                         position: absolute;
+                         right: 0;
+                         bottom: 0;
+                    }
+
+                    .fav-icon--hover {
+                         background: linear-gradient(to top, $gradient-btn-colour, $primary-colour);
+                         -webkit-background-clip: text;
+                         background-clip: text;
+                         -webkit-text-fill-color: transparent;
+                         opacity: 0;
+                    }
+         
+                    &:hover .fav-icon--default {
+                         opacity: 0;
+                    }
+         
+                    &:hover .fav-icon--hover {
+                         opacity: 1;
+                    }
+               }
+          }
+
+          &__list {
+               @include flex-container (flex, column, flex-start, flex-start);
+               width: 100%;
+               row-gap: 12px;
+
+               & h2 {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+
+                    
+                    & span {
+                         position: relative;
+
+                         &::after {
+                              position: absolute;
+                              border-bottom: 3px solid #99E2D0;
+                              width: 100%;
+                              display: block;
+                              content: '';
+                              bottom: -8px;
+                         }
+                    }
+               }
+               
+               &__card {
+                    @include flex-container (flex, row, space-between, flex-end);
+                    background-color: white;
+                    width: 100%;
+                    padding: 12px 15px;
+                    border-radius: 15.04px;
+                    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.05);
+
+                    &__content {
+                         & h3 {
+                              font-size: 18px;
+                              font-weight: 500;
+                         }
+     
+                         & p {
+                              font-size: 15.04px;
+                              font-weight: 300;
+                              margin-top: 5px;
+                         }
+                    }
+
+                    &__price {
+                         font-size: 15.04px;
+                         font-weight: 700;
+                    }
+               }
+
+          }
+          
+          &__btn {
+               @include btn(186px);
+               margin-bottom: 40px;
+          }
+     }
+
+
+}
