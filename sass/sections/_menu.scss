@@ -1,10 +1,18 @@
 .menu {
+     background-color: white;
+     @media (min-width: 1024px){
+          @include flex-container (flex, column, flex-start, center);
+     }
 
      & img {
           object-fit: cover;
           height: 275px;
           width: 100%;
           display: block;
+
+          @media (min-width: 1024px) {
+               height: 383px;
+          }
      }
      
      &__container {
@@ -13,13 +21,23 @@
           border-radius: 40px 40px 0 0;
           background-color: $bg-colour-primary;
           margin-top: -55px;
-          padding: 32px 13px 0 13px;
+          padding: 32px 13px 40px 13px;
           row-gap: 40px;
+
+          @media (min-width: 1024px) {
+               width: 1055px;
+               margin-top: -40px;
+               padding: 51px 210px 40px 210px;
+          }
 
           &__title {
                @include flex-container (flex, row, space-between, center);
                margin: 0 3px;
                width: 100%;
+
+               @media (min-width:1024px) {
+                    width: auto;
+               }
 
                & h1{
                     font-size: 28px;
@@ -31,6 +49,12 @@
                     position: relative;
                     right: 30px;
                     top: 10px;
+                    cursor: pointer;
+
+                    @media (min-width: 1024px) {
+                         right: 0;
+                         margin-left: 48px;
+                    }
                     
                     & i {
                          font-size: 22px;
@@ -61,6 +85,8 @@
                @include flex-container (flex, column, flex-start, flex-start);
                width: 100%;
                row-gap: 12px;
+               opacity: 0;
+               animation: fadeIn 1s forwards;
 
                & h2 {
                     text-transform: uppercase;
@@ -114,9 +140,22 @@
           
           &__btn {
                @include btn(186px);
-               margin-bottom: 40px;
           }
+
+          .list1 {
+               animation-delay: 0.5s;
+          }
+          .list2 {
+               animation-delay: 1s;
+          }
+          .list3 {
+               animation-delay: 1.5s;
+          }
+
+          @keyframes fadeIn {
+               to {
+                   opacity: 1; /* Rend visible */
+               }
+           }
      }
-
-
 }

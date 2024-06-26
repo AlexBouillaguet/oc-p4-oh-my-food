@@ -211,6 +211,7 @@ header {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s, box-shadow 0.5s;
   cursor: pointer;
+  cursor: pointer;
 }
 .explore__btn:hover {
   opacity: 0.8;
@@ -433,12 +434,28 @@ header {
   }
 }
 
+.menu {
+  background-color: white;
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .menu img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 275px;
   width: 100%;
   display: block;
+}
+@media (min-width: 1024px) {
+  .menu img {
+    height: 383px;
+  }
 }
 .menu__container {
   display: flex;
@@ -449,8 +466,15 @@ header {
   border-radius: 40px 40px 0 0;
   background-color: #F6F6F6;
   margin-top: -55px;
-  padding: 32px 13px 0 13px;
+  padding: 32px 13px 40px 13px;
   row-gap: 40px;
+}
+@media (min-width: 1024px) {
+  .menu__container {
+    width: 1055px;
+    margin-top: -40px;
+    padding: 51px 210px 40px 210px;
+  }
 }
 .menu__container__title {
   display: flex;
@@ -459,6 +483,11 @@ header {
   align-items: center;
   margin: 0 3px;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .menu__container__title {
+    width: auto;
+  }
 }
 .menu__container__title h1 {
   font-size: 28px;
@@ -469,6 +498,13 @@ header {
   position: relative;
   right: 30px;
   top: 10px;
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .menu__container__title__fav-icon {
+    right: 0;
+    margin-left: 48px;
+  }
 }
 .menu__container__title__fav-icon i {
   font-size: 22px;
@@ -496,6 +532,8 @@ header {
   align-items: flex-start;
   width: 100%;
   row-gap: 12px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 .menu__container__list h2 {
   text-transform: uppercase;
@@ -550,11 +588,25 @@ header {
   border-radius: 50px;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s, box-shadow 0.5s;
-  margin-bottom: 40px;
+  cursor: pointer;
 }
 .menu__container__btn:hover {
   opacity: 0.8;
   box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.2);
+}
+.menu__container .list1 {
+  animation-delay: 0.5s;
+}
+.menu__container .list2 {
+  animation-delay: 1s;
+}
+.menu__container .list3 {
+  animation-delay: 1.5s;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Rend visible */
+  }
 }
 
 * {
