@@ -556,12 +556,21 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   background-color: white;
   width: 100%;
+  height: 69px;
   padding: 12px 15px;
   border-radius: 15.04px;
   box-shadow: 0 8px 9px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__container__list__card__content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__container__list__card__content h3 {
   font-size: 18px;
@@ -573,8 +582,36 @@ header {
   margin-top: 5px;
 }
 .menu__container__list__card__price {
+  align-self: flex-end;
   font-size: 15.04px;
   font-weight: 700;
+  transition: transform 0.3s ease;
+}
+.menu__container__list__card__check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 69px;
+  background-color: #99E2D0;
+  border-radius: 0 15.04px 15.04px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+.menu__container__list__card__check .fa-circle-check {
+  font-size: 20px;
+  color: white;
+}
+.menu__container__list__card:hover .menu__container__list__card__price {
+  transform: translateX(-59px);
+}
+.menu__container__list__card:hover .menu__container__list__card__check {
+  transform: translateX(0);
 }
 .menu__container__btn {
   border: none;
@@ -605,7 +642,7 @@ header {
 }
 @keyframes fadeIn {
   to {
-    opacity: 1; /* Rend visible */
+    opacity: 1;
   }
 }
 
