@@ -568,18 +568,22 @@ header {
   cursor: pointer;
 }
 .menu__container__list__card__content {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  transition: width 0.3s ease;
 }
 .menu__container__list__card__content h3 {
   font-size: 18px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__container__list__card__content p {
   font-size: 15.04px;
   font-weight: 300;
   margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__container__list__card__price {
   align-self: flex-end;
@@ -612,6 +616,9 @@ header {
 }
 .menu__container__list__card:hover .menu__container__list__card__check {
   transform: translateX(0);
+}
+.menu__container__list__card:hover .menu__container__list__card__content {
+  width: 70%;
 }
 .menu__container__btn {
   border: none;

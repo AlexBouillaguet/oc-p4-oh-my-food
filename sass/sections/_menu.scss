@@ -122,19 +122,22 @@
                     cursor: pointer;
 
                     &__content {
-                         text-overflow: ellipsis;
-                         overflow: hidden;
-                         white-space: nowrap;
-
+                         transition: width 0.3s ease;
                          & h3 {
                               font-size: 18px;
                               font-weight: 500;
+                              text-overflow: ellipsis;
+                              overflow: hidden;
+                              white-space: nowrap;
                          }
                          
                          & p {
                               font-size: 15.04px;
                               font-weight: 300;
                               margin-top: 5px;
+                              text-overflow: ellipsis;
+                              overflow: hidden;
+                              white-space: nowrap;
                          }
                     }
 
@@ -170,6 +173,10 @@
 
                     &:hover &__check {
                          transform: translateX(0);
+                    }
+
+                    &:hover &__content {
+                         width: 70%; 
                     }
                }
           }
