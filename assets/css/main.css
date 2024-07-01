@@ -190,14 +190,6 @@ header {
     margin-top: 34px;
   }
 }
-.explore a {
-  margin-top: 27px;
-}
-@media (min-width: 1024px) {
-  .explore a {
-    margin-top: 30px;
-  }
-}
 .explore__btn {
   border: none;
   outline: none;
@@ -212,10 +204,16 @@ header {
   transition: opacity 0.5s, box-shadow 0.5s;
   cursor: pointer;
   cursor: pointer;
+  margin-top: 27px;
 }
 .explore__btn:hover {
   opacity: 0.8;
   box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1024px) {
+  .explore__btn {
+    margin-top: 30px;
+  }
 }
 
 .step {
@@ -410,7 +408,7 @@ header {
   right: 0;
   bottom: 0;
   font-size: 22px;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.5s ease;
 }
 .restaurants__box__container__card__bottom__fav-icon .fav-icon--hover, .restaurants__box__container a__bottom__fav-icon .fav-icon--hover {
   background: linear-gradient(to top, rgba(255, 121, 217, 0.8431372549), #9356DC);
@@ -511,6 +509,7 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: opacity 0.5s ease;
 }
 .menu__container__title__fav-icon .fav-icon--hover {
   background: linear-gradient(to top, rgba(255, 121, 217, 0.8431372549), #9356DC);
@@ -590,6 +589,10 @@ header {
   font-size: 15.04px;
   font-weight: 700;
   transition: transform 0.3s ease;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  padding: 30px 15px 0 5px;
 }
 .menu__container__list__card__check {
   display: flex;

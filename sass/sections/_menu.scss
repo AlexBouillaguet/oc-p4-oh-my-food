@@ -61,6 +61,7 @@
                          position: absolute;
                          right: 0;
                          bottom: 0;
+                         transition: opacity 0.5s ease;
                     }
 
                     .fav-icon--hover {
@@ -146,6 +147,10 @@
                          font-size: 15.04px;
                          font-weight: 700;
                          transition: transform 0.3s ease;
+                         background-color: white;
+                         position: absolute;
+                         right: 0;
+                         padding: 30px 15px 0 5px;
                     }
 
                     &__check {
@@ -199,6 +204,6 @@
                to {
                    opacity: 1;
                }
-           }
+          }
      }
 }

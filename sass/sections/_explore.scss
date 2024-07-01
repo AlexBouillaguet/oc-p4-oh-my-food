@@ -24,16 +24,13 @@
         }
     }
 
-    & a {
+    &__btn {
+        @include btn(218px);
+        cursor: pointer;
         margin-top: 27px;
 
         @media (min-width: 1024px) {
             margin-top: 30px;
         }
-    }
-
-    &__btn {
-        @include btn(218px);
-        cursor: pointer;
     }
 }
