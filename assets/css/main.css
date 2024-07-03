@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  list-style-type: none;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 18px;
+}
+
 .loader {
   height: 100%;
   width: 100%;
@@ -191,6 +212,10 @@ header {
   }
 }
 .explore__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
   background: linear-gradient(to bottom, rgba(255, 121, 217, 0.8431372549), #9356DC);
@@ -413,8 +438,8 @@ header {
 .restaurants__box__container__card__bottom__fav-icon .fav-icon--hover, .restaurants__box__container a__bottom__fav-icon .fav-icon--hover {
   background: linear-gradient(to top, rgba(255, 121, 217, 0.8431372549), #9356DC);
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
   opacity: 0;
 }
 .restaurants__box__container__card__bottom__fav-icon:hover .fav-icon--default, .restaurants__box__container a__bottom__fav-icon:hover .fav-icon--default {
@@ -514,8 +539,8 @@ header {
 .menu__container__title__fav-icon .fav-icon--hover {
   background: linear-gradient(to top, rgba(255, 121, 217, 0.8431372549), #9356DC);
   -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+          background-clip: text;
+  color: transparent;
   opacity: 0;
 }
 .menu__container__title__fav-icon:hover .fav-icon--default {
@@ -624,6 +649,10 @@ header {
   width: 70%;
 }
 .menu__container__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
   background: linear-gradient(to bottom, rgba(255, 121, 217, 0.8431372549), #9356DC);
@@ -654,25 +683,4 @@ header {
   to {
     opacity: 1;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "roboto", sans-serif;
-  list-style-type: none;
-}
-
-body {
-  background-color: #F6F6F6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-p {
-  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */

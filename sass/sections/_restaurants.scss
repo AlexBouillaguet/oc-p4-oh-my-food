@@ -19,6 +19,8 @@
             margin-bottom: 26px;
         }
 
+        // restaurants cards
+        
         &__container {
             @include flex-container(flex, column, flex-start, center);
             row-gap: 18px;
@@ -29,7 +31,7 @@
                 height: 251px;
                 width: 100%;
                 @media (min-width: 1024px) {
-                  flex: 1 1 40%;
+                    flex: 1 1 40%;
                 }
             
                 &__top {
@@ -46,7 +48,9 @@
                         position: absolute;
                         bottom: 0;
                     }
-            
+
+                    // new icon
+
                     &__new {
                         @include flex-container(flex, row, center, center);
                         position: absolute;
@@ -54,10 +58,10 @@
                         top: 12px;
                         height: 29px;
                         width: 80px;
-                        background-color: $new-icon-bg-color;
+                        background-color: $secondary-color;
                         font-size: 14px;
                         font-weight: bold;
-                        color: $new-icon-font-color;
+                        color: $secondary-dark-color;
                         border-radius: 2px;
             
                         &--hide {
@@ -84,7 +88,9 @@
                             font-weight: 300;
                         }
                     }
-            
+                    
+                    // heart icon
+
                     &__fav-icon {
                         position: absolute;
                         right: 25px;
@@ -99,10 +105,9 @@
                         }
                        
                         .fav-icon--hover {
-                            background: linear-gradient(to top, $gradient-btn-colour, $primary-colour);
-                            -webkit-background-clip: text;
+                            background: linear-gradient(to top, $primary-light-colour, $primary-colour);
                             background-clip: text;
-                            -webkit-text-fill-color: transparent;
+                            color: transparent;
                             opacity: 0;
                         }
             

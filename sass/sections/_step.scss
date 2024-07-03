@@ -18,7 +18,7 @@
         & h2 {
             margin-bottom: 26px;
         }
-        
+
         &__container {
             @include flex-container(flex, column, flex-start, center);
             row-gap: 24.92px;
@@ -36,7 +36,7 @@
                 @media (min-width: 1024px) {
                     width: 335px;
                 }
-            
+
                 &__number {
                     @include flex-container(flex, row, center, center);
                     height: 24px;
@@ -47,16 +47,16 @@
                     color: white;
                     margin-left: -12px;
                 }
-            
+
                 &__icon {
                     margin-left: 21.98px;
                     color: $icon-primary-color;
-            
+
                     &--primary-color {
                         color: $primary-colour;
                     }
                 }
-            
+
                 &__text {
                     margin-left: 27px;
                     font-weight: bold;
@@ -68,8 +68,6 @@
                 justify-content: center;
                 column-gap: 24px;
             }
-            
-            
         }
     }
 }

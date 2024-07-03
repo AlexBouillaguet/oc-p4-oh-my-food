@@ -1,31 +1,27 @@
-@mixin flex-container(
-  $display,
-  $flex-direction,
-  $justify-content,
-  $align-items
-) {
-  display: $display;
-  flex-direction: $flex-direction;
-  justify-content: $justify-content;
-  align-items: $align-items;
+@mixin flex-container($display, $flex-direction, $justify-content, $align-items) {
+     display: $display;
+     flex-direction: $flex-direction;
+     justify-content: $justify-content;
+     align-items: $align-items;
 }
 
 @mixin btn($width) {
-  border: none;
-  outline: none;
-  background: linear-gradient(to bottom, $gradient-btn-colour, $primary-colour);
-  height: 50px;
-  width: $width;
-  font-size: 16px;
-  font-weight: 400;
-  color: white;
-  border-radius: 50px;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.5s, box-shadow 0.5s;
-  cursor: pointer;
+     @include flex-container(flex, row, center, center);
+     border: none;
+     outline: none;
+     background: linear-gradient(to bottom, $primary-light-colour, $primary-colour);
+     height: 50px;
+     width: $width;
+     font-size: 16px;
+     font-weight: 400;
+     color: white;
+     border-radius: 50px;
+     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+     transition: opacity 0.5s, box-shadow 0.5s;
+     cursor: pointer;
 
-  &:hover {
-    opacity: 0.8;
-    box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.2);
-  }
+     &:hover {
+          opacity: 0.8;
+          box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.2);
+     }
 }
